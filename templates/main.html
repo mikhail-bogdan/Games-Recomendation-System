@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link type = "text/css" rel = "stylesheet" href = "/static/styles/main.css">
+</head>
+<body style="margin: 0; color: white">
+    {% include "header.html" %}
+    <div class="container" style="width: 80%; flex-wrap: wrap;">
+        {% for game in games %}
+            {% include "game_container.html" %}
+        {% endfor %}
+    </div>
+</body>
+</html>

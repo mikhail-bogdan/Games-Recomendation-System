@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link type = "text/css" rel = "stylesheet" href = "/static/styles/main.css">
+    <script src="/static/scripts/main.js"></script>
+</head>
+<body style="margin: 0">
+    {% include "header.html" %}
+    <div class="container" style=" background-color: gray; width: 20%; padding: 15px">
+        <form style="display: flex; flex-direction: column" action="/login" method="post">
+            <label>Имя пользователя:
+                <input type="text" name="login">
+            </label>
+            <input style="margin-top: 20px; align-self: end" type="submit" value="Войти">
+        </form>
+    </div>
+</body>
+</html>

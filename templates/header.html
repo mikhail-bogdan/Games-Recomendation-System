@@ -1,0 +1,37 @@
+<!--<meta charset="UTF-8">
+<body style="margin: 0">-->
+<div style="width: 750px; position: absolute; left: 0; right: 0; margin: auto; display: flex; height: 50px; background-color: #171a21">
+    <a href="/"  style="padding: 10px; display: inline; color: white; font-size: x-large; margin-left: 20px">
+        Главная
+    </a>
+    <div style="padding: 10px; display: inline; color: white; font-size: x-large; margin-left: 20px">
+    <!--onmouseenter="document.getElementById('genres').style.display = 'block';"
+    onmouseleave="document.getElementById('genres').style.display = 'none';">-->
+        Жанры
+        <div id="genres" style="z-index: 300; display: none; background-color: red; position: absolute; top: 50px; padding: 10px">
+            <a href="/genre/1">Action</a><br>
+            <a href="/genre/2">Strategy</a><br>
+            <a href="/genre/3">Role-Playing</a><br>
+            <a href="/genre/4">Casual</a><br>
+            <a href="/genre/9">Racing</a><br>
+            <a href="/genre/28">Simulation</a>
+        </div>
+    </div>
+    <a href="/library" style="padding: 10px; display: inline; color: white; font-size: x-large; margin-left: 20px">
+        Мои игры
+    </a>
+    {% if name != None %}
+    <div style="text-align: right; width: 200px; padding: 10px; display: inline; color: white; font-size: x-large; margin-left: 20px">
+        {{ name }}
+    </div>
+    {% endif %}
+    {% if name == None %}
+    <a href="/login" style="position: absolute; right: 0; height: 30px; text-align: center; padding: 10px; display: inline; color: white; font-size: large; margin-left: 20px">
+        Войти
+    </a>
+    {% else %}
+    <a href="/logout" style="position: absolute; right: 0; height: 30px; text-align: center; padding: 10px; display: inline; color: white; font-size: large; margin-left: 20px">
+        Выйти
+    </a>
+    {% endif %}
+</div>

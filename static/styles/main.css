@@ -1,0 +1,29 @@
+.container
+{
+    display: flex;
+    width: 50%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.button
+{
+    display: block;
+    cursor: pointer;
+    padding: 0 15px;
+    font-size: 15px;
+    width: max-content;
+    line-height: 30px;
+    background-image: linear-gradient(to right, rgb(117, 176, 34) 5%, rgb(88, 138, 27) 95%);
+    color: #d2efa9;
+    border-radius: 2px
+}
